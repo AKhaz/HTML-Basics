@@ -1,45 +1,197 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-<title>Khazeni Website</title>
-<style>
+  <title>Khaz</title>
+  <style>
+      * {
+      box-sizing: border-box;
+    }
+  /*Adding fonts*/
+  /*For titles and headers*/
+    @font-face {
+      font-family: bigbold;
+      src: url("fonts/bigandbold.otf");
+    }
+  /*For descriptions, paragraphs, and buttons*/
+    @font-face {
+      font-family: basicFont;
+      src: url("fonts/basicFont.ttf");
+    }
+    body {
+      background-image: url(images/bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    h1 {
+      color: white;
+      font-family: bigbold;
+      font-size: 50px;
+      }
+  /*Style for the main title (Title at the top of first page)*/
+    h1.maintitle {
+      font-size: 100px;
+      text-align: center;
+      margin: -5px;
+      }
+    h1.maintitle:hover {
+      text-shadow: 0px 0px 5px white;
+    }
+    h1.maintitle:active {
+      text-shadow: 0px 0px 10px white;
+    }
 
-  body {
-    background-image: url(images/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  h1 {
-    color: white;
-    font-family: verdana;
-  }
-  /* */
-  .linkButton:link, .linkButton:visited {
-    background-color: #a22633;
-    color: white;
-    font-family: verdana;
-    padding: 20px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .linkButton:hover, .linkButton:active{
-    background-color: #e43b44;
-  }
-  .paraStyle1{
-    color: white;
-    font-family: verdana;
-  }
-</style>
+  /*General table styling*/
+    table, th, td{
+      color: white;
+      font-family: basicFont;
+      border: 4px solid #3a4466;
+      padding: 20px;
+      border-collapse: collapse;
+      background-color: #181425;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  /*Defining style classes for green and red text on tables*/
+    th.valid{
+      color: #63c74d;
+    }
+    th.invalid{
+      color: #e43b44;
+    }
+    /*Link Button CSS*/
+    .linkButton:link, .linkButton:visited {
+      background-color: #3e8948;
+      color: white;
+      font-family: basicFont;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 3em;
+      overflow: hidden;
+    }
+    .linkButton:hover{
+      background-color: #63c74d;
+      box-shadow: 0px 0px 8px #3e8948;
+    }
+    .linkButton:active{
+      box-shadow: 0px 0px 16px #3e8948;
+    }
+    /*Used for descriptive paragraphs on title page*/
+    .paraStyle1{
+      width: 900px;
+      color: white;
+      font-family: basicFont;
+      text-align: justify;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-left: 100px;
+    }
+    .icon{
+      width: 30px;
+      height: 30px;
+      float: left;
+      align-self: center;
+      vertical-align: middle;
+      margin: 10px;
+    }
+    .downloadTable{
+      overflow: hidden;
+      float: left;
+      margin-left: 100px;
+    }
+    }
+    .sidewaysMenu{
+      float: left;
+      width: 10%
+      padding: 0 8px;
+      text-align: center;
+    }
+    .sidewaysMenu a {
+      background-color:#3a4466;
+      font-family: bigbold;
+      padding:8px;
+      margin-top:70px;
+      display:block;
+      width:10%;
+      color:white;
+    }
+    .main{
+      float: left;
+      width: 70%
+      padding: 0 8px;
+      text-align: left;
+    }
+    .rightSideways{
+      background-color:#3a4466;
+      float: left;
+      width: 10%
+      padding: 8px;
+      text-align: center;
+    }
+    @media only screen and (max-width:620px) {
+      /* For mobile phones: */
+      .sidewaysMenu, .main, .rightSideways {
+        width:100%;
+      }
+    }
+  </style>
+  <meta name="description" content="A collection of games and programs.">
+  <meta name="keywords" content="games, free, online, multiplayer, programs, coding, khazeni, aiden">
+  <meta name="author" content="Aiden Khazeni">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
   <!-- -->
-  <h1 title="Yup. Thats me.">Khaz</h1>
+  <h1 class = "maintitle" title="Yup. Thats me.">KHAZ</h1>
   <hr></hr>
-  <p class = "paraStyle1">A collection of programs and games I've made.</p>
-  <a class = "linkButton" href="www.google.com"><strong>Link in this Box<strong></a>
+
+  <div style="overflow: auto">
+
+    <div class = "sidewaysMenu">
+      <a>Sideways</a>
+    </div>
+
+    <div class="main">
+      <p class = "paraStyle1"><strong>A collection of programs and games I've made during my time here at bishops.</strong></p>
+      <p class = "paraStyle1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tellus molestie nunc non blandit massa. Sagittis orci a scelerisque purus semper eget duis. Montes nascetur ridiculus mus mauris vitae ultricies. Felis eget velit aliquet sagittis id consectetur. Faucibus in ornare quam viverra orci sagittis eu volutpat. Est ante in nibh mauris cursus mattis. Accumsan in nisl nisi scelerisque eu. Tempus iaculis urna id volutpat. Arcu odio ut sem nulla pharetra. Pretium lectus quam id leo in vitae turpis massa. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Morbi tristique senectus et netus. Ut pharetra sit amet aliquam id diam.</p>
+
+      <div class="downloadTable">
+        <h1>DOWNLOAD</h1>
+        <table>
+          <tr>
+            <th>OS</th>
+            <th>Mac</th>
+            <th>Windows</th>
+            <th>Mobile</th>
+          </tr>
+          <tr>
+            <th>Availiability</th>
+            <th class = "invalid">Not Availiable</th>
+            <th class = "valid">Availiable</th>
+            <th class = "invalid">Not Availiable</th>
+          </tr>
+          <tr>
+            <th>Download Link</th>
+            <th>N/A</th>
+            <th>
+              <a class = "linkButton" href = "https://youtu.be/uH0hikcwjIA"><img src = "images/downloadIcon.png" class = "icon" alt="DownloadIcon"><strong>Download<strong></a>
+            </th>
+            <th>N/A</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="rightSideways">
+      <p class = "paraStyle1"><strong>Title</strong></p>
+      <p class = "paraStyle1">New release coming out soon! Come back to this site soon!</p>
+    </div>
+
+  </div>
+
 
 </body>
 </html>
