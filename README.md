@@ -9,12 +9,12 @@ For the second part of our project, I plan to work on nice responsive elements a
 On my website, I plan to include:
 |Goal                |ASCII                          |
 |----------------|-------------------------------|
-|Downloads|Not Finished|
+|Downloads|Finished|
 |Online Game(s)|Not Finished|
 |Embedded Youtube|Not Finished|
-|Responsive Elements|Mostly Finished|
-|IFrame Stuff|Not Finished|
+|Responsive Elements|Finished|
+|IFrame Stuff|Finished|
 |Table|Finished|
-|Lists|Not Finished|
+|Lists|Finished|
 |Links|Finished|
 |Images|Finished|

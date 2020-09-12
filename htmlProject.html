@@ -18,10 +18,17 @@
       src: url("fonts/basicFont.ttf");
     }
     body {
-      background-image: url(images/bg.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      /*Linear Gradient, Facing Left (270deg)*/
+      background: linear-gradient(270deg, #181425, #102122, #312233);
+      background-size: 600% 600%;
+      /*Apply keyframes*/
+      animation: GradientBG 30s ease infinite;
+    }
+    /*Gradient Background Animation/Scrolling*/
+    @keyframes GradientBG {
+      0%{background-position: 0% 0%}
+      50%{background-position: 100% 100%}
+      100%{background-position: 0% 0%}
     }
     h1 {
       color: white;
@@ -30,15 +37,26 @@
       }
   /*Style for the main title (Title at the top of first page)*/
     h1.maintitle {
-      font-size: 100px;
+      font-size: 90px;
       text-align: center;
-      margin: -5px;
       }
     h1.maintitle:hover {
       text-shadow: 0px 0px 5px white;
     }
     h1.maintitle:active {
       text-shadow: 0px 0px 10px white;
+    }
+    h2 {
+      color: white;
+      font-family: bigbold;
+      font-size: 50px;
+      text-align: left;
+    }
+    h3 {
+      color: white;
+      font-family: bigbold;
+      font-size: 30px;
+      text-align: left;
     }
 
   /*General table styling*/
@@ -58,6 +76,25 @@
     }
     th.invalid{
       color: #e43b44;
+    }
+    /*Anchor Button CSS*/
+    .anchorButton{
+      background-color: #3e8948;
+      color: white;
+      font-family: basicFont;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 3em;
+      overflow: hidden;
+    }
+    .anchorButton:hover{
+      background-color: #63c74d;
+      box-shadow: 0px 0px 8px #3e8948;
+    }
+    .anchorButton:active{
+      box-shadow: 0px 0px 16px #3e8948;
     }
     /*Link Button CSS*/
     .linkButton:link, .linkButton:visited {
@@ -80,54 +117,71 @@
     }
     /*Used for descriptive paragraphs on title page*/
     .paraStyle1{
-      width: 900px;
       color: white;
       font-family: basicFont;
       text-align: justify;
       text-overflow: ellipsis;
       overflow: hidden;
-      margin-left: 100px;
     }
-    .icon{
-      width: 30px;
-      height: 30px;
-      float: left;
-      align-self: center;
-      vertical-align: middle;
-      margin: 10px;
-    }
+    /**Download Table**/
     .downloadTable{
+      float: left;
       overflow: hidden;
-      float: left;
-      margin-left: 100px;
-    }
-    .sidewaysMenu{
-      background-color:#3a4466;
-      height: 100%;
-      display: block;
-      float: left;
-      width: 20%
-    }
-    .sidewaysMenu a {
-      font-family: bigbold;
-      color:white;
-    }
-    .main{
-      width: 60%;
-      display: block;
-      padding: 0 2px;
-      text-align: left;
-    }
-    .rightSideways{
-      background-color:#3a4466;
-      display: block;
-      float: right;
-      width: 20%
-      padding: 8px;
       text-align: center;
     }
+    /**Panel/Menu on Left**/
+    .sidewaysMenu{
+      background-color:#262b44;
+      border-radius: 6px;
+      float: left;
+      width: 10%;
+      font-family: basicFont;
+      color:white;
+      padding: 20px;
+      margin: 10px;
+    }
+    .sidewaysMenu a {
+      font-family: basicFont;
+      color:white;
+    }
+/**Middle Area*/
+    .main{
+      padding-top: 25px;
+      padding-left: 13%;
+      padding-right: 13%;
+      text-align: left;
+    }
+    .main img{
+      padding: 30px;
+      float: left;
+    }
+    .main iframe{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      width: 80%;
+    }
+/**Panel/Menu on Right**/
+    .rightSideways{
+      background-color:#262b44;
+      border-radius: 6px;
+      float: right;
+      width: 10%;
+      padding: 20px;
+      font-family: basicFont;
+      color:white;
+      margin: 10px;
+    }
+    /*For holding images and screenshots on main*/
+    .imageHolder{
+      background-color:#3a4466;
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+/* For mobile phones: */
     @media only screen and (max-width:620px) {
-      /* For mobile phones: */
       .sidewaysMenu, .main, .rightSideways {
         width:100%;
       }
@@ -144,40 +198,76 @@
   <h1 class = "maintitle" title="Yup. Thats me.">KHAZ</h1>
   <hr></hr>
 
-
+  <!--Left Menu-->
   <div class = "sidewaysMenu">
-    <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+    <p><strong>Current Projects:</strong></p>
+    <hr></hr>
+    <ul>
+      <li>Overworld</li>
+      <li>Another Item</li>
+      <li>Yet another Item</li>
+    </ul>
   </div>
-
+  <!--Right Menu-->
   <div class="rightSideways">
-    <p class = "paraStyle1"><strong>Title</strong></p>
-    <p class = "paraStyle1">New release coming out soon! Come back to this site soon!</p>
+    <p class = "paraStyle1"><strong>Finished Projects:</strong></p>
+    <hr></hr>
+    <ol>
+      <li>WackJack</li>
+      <li>3D Pixelart Tool</li>
+    </ol>
+    <hr></hr>
+    <p class = "paraStyle1">New releases coming out soon! Come back to this site soon!</p>
   </div>
 
+  <!--Middle Area-->
   <div class="main">
-    <p class = "paraStyle1"><strong>A collection of programs and games I've made during my time here at bishops.</strong></p>
-    <p class = "paraStyle1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tellus molestie nunc non blandit massa. Sagittis orci a scelerisque purus semper eget duis. Montes nascetur ridiculus mus mauris vitae ultricies. Felis eget velit aliquet sagittis id consectetur. Faucibus in ornare quam viverra orci sagittis eu volutpat. Est ante in nibh mauris cursus mattis. Accumsan in nisl nisi scelerisque eu. Tempus iaculis urna id volutpat. Arcu odio ut sem nulla pharetra. Pretium lectus quam id leo in vitae turpis massa. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Morbi tristique senectus et netus. Ut pharetra sit amet aliquam id diam.</p>
-
+    <p class = "paraStyle1"><strong>This website is a collection of programs and games I've made during my time here at bishops.</strong></p>
+    <p class = "paraStyle1">As of now, this website is almost completely empty. I'm working on a few fun projects to get running on  this site soon, but they're going to take a while. Anyways, here's a bunch of filler text. <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <hr></hr>
+    <h2><strong>3D Pixelart Tool</strong></h2>
+    <!--Anchor link that sends you to the Download table. (ID: DownloadJump)-->
+    <a class = "anchorButton" href="#DownloadJump"><strong>Go To Download<strong></a>
+    <p class = "paraStyle1">Have you ever wanted to see what your pixelart will look like in 3D?<br>This tool allows you to import any image/sprite into the program, and edit it in 3D space! You can use a variety of shapes to project your sprites on too, as well as light functionality,</p>
+    <!--Screenshots-->
+    <!--I didn't have that many screenshots, so I had to copy/paste the same one over and over. Sorry.-->
+    <div class="imageHolder">
+      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool." style = "margin-left: auto">
+      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool.">
+      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool.">
+      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool.">
+      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool." style = "margin-right: auto">
+    </div>
+    <!--IFrame Tool Guide-->
+    <div>
+        <h3>GUIDE</h3>
+      <iframe src = "https://docs.google.com/document/d/1aUeEUoP9aAACAn4zzNFiRK97Jb5CEdY7H_L2BtcIp4A/edit" height="600"></iframe>
+    </div>
+    <!--Download Table-->
     <div class="downloadTable">
-      <h1>DOWNLOAD</h1>
+      <h3 id="DownloadJump">DOWNLOAD</h3>
       <table>
         <tr>
+          <!--Operating System-->
           <th>OS</th>
           <th>Mac</th>
           <th>Windows</th>
           <th>Mobile</th>
         </tr>
         <tr>
+          <!--Availiability-->
           <th>Availiability</th>
           <th class = "invalid">Not Availiable</th>
-          <th class = "valid">Availiable</th>
+          <th class = "valid">&#10004;</th>
           <th class = "invalid">Not Availiable</th>
         </tr>
         <tr>
+          <!--Downloads-->
           <th>Download Link</th>
           <th>N/A</th>
           <th>
-            <a class = "linkButton" href = "https://youtu.be/uH0hikcwjIA"><img src = "images/downloadIcon.png" class = "icon" alt="DownloadIcon"><strong>Download<strong></a>
+            <a class = "linkButton" href = "https://drive.google.com/drive/folders/1NlxFJkr1kqSRyOvKQQGik6Y23XmjDv0p?usp=sharing"><strong>&#8659; Download<strong></a>
           </th>
           <th>N/A</th>
         </tr>
