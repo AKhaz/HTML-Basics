@@ -1,93 +1,114 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
+
   <title>Khaz</title>
-  <link rel="stylesheet" href="style_css.css">
+  <!--<link rel="stylesheet" href="style_css.css">-->
   <meta name="description" content="A collection of games and programs.">
   <meta name="keywords" content="games, free, online, multiplayer, programs, coding, khazeni, aiden">
   <meta name="author" content="Aiden Khazeni">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Boostrap Stuff -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<style type = "text/css">
+  body { background: rgba(22,25,40,1.00) !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
 <body>
-
   <!-- -->
-  <h1 id = "maintitle" title="Yup. Thats me.">KHAZ</h1>
-  <hr></hr>
+  <div class = "container rounded bg-black">
 
-  <!--Left Menu-->
-  <div class = "sidewaysMenu">
-    <p><strong>Current Projects:</strong></p>
-    <hr></hr>
-    <ul>
-      <li>Overworld</li>
-      <li>Another Item</li>
-      <li>Yet another Item</li>
-    </ul>
-  </div>
-  <!--Right Menu-->
-  <div class="rightSideways">
-    <p class = "paraStyle1"><strong>Finished Projects:</strong></p>
-    <hr></hr>
-    <ol>
-      <li>WackJack</li>
-      <li>3D Pixelart Tool</li>
-    </ol>
-    <hr></hr>
-    <p class = "paraStyle1">New releases coming out soon! Come back to this site soon!</p>
-  </div>
+    <!-- Alert Button-->
+    <div class="alert alert-success alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>A new game has been added!</strong> Check it out now.
+    </div>
 
-  <!--Middle Area-->
-  <div class="main">
-    <p class = "paraStyle1"><strong>This website is a collection of programs and games I've made during my time here at bishops.</strong></p>
-    <p class = "paraStyle1">As of now, this website is almost completely empty. I'm working on a few fun projects to get running on  this site soon, but they're going to take a while. Anyways, here's a bunch of filler text. <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <hr></hr>
-    <h2><strong>3D Pixelart Tool</strong></h2>
-    <!--Anchor link that sends you to the Download table. (ID: DownloadJump)-->
-    <a class = "anchorButton" href="#DownloadJump"><strong>Go To Download<strong></a>
-    <p class = "paraStyle1">Have you ever wanted to see what your pixelart will look like in 3D?<br>This tool allows you to import any image/sprite into the program, and edit it in 3D space! You can use a variety of shapes to project your sprites on too, as well as light functionality,</p>
-    <!--Screenshots-->
-    <!--I didn't have that many screenshots, so I had to copy/paste the same one over and over. Sorry.-->
-    <div class="imageHolder">
-      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool." style = "margin-left: auto">
-      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool.">
-      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool.">
-      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool.">
-      <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool." style = "margin-right: auto">
+    <!-- Title -->
+    <div class="jumbotron text-center bg-dark shadow-lg">
+      <h1 class = "display-1 text-white" title="Yup. Thats me.">KHAZ</h1>
+      <p class = "text-white">Blah Blah blah</p>
     </div>
-    <!--IFrame Tool Guide-->
-    <div>
-        <h3>GUIDE</h3>
-      <iframe src = "https://docs.google.com/document/d/1aUeEUoP9aAACAn4zzNFiRK97Jb5CEdY7H_L2BtcIp4A/edit" height="600"></iframe>
+
+    <!--Left Menu-->
+    <div class = "border rounded p-3 shadow-lg">
+      <p class = "text-white"><strong>Current Projects:</strong></p>
+      <hr></hr>
+      <ul>
+        <li class = "text-white">Overworld</li>
+        <li class = "text-white">Another Item</li>
+        <li class = "text-white">Yet another Item</li>
+      </ul>
     </div>
-    <!--Download Table-->
-    <div class="downloadTable">
-      <h3 id="DownloadJump">DOWNLOAD</h3>
-      <table>
+    <!--Right Menu-->
+    <div class="border rounded p-3 shadow-lg">
+      <p class = "text-white"><strong>Finished Projects:</strong></p>
+      <hr></hr>
+      <ol>
+        <li class = "text-white">WackJack</li>
+        <li class = "text-white">3D Pixelart Tool</li>
+      </ol>
+      <hr></hr>
+      <p class = "text-white">New releases coming out soon! Come back to this site soon!</p>
+    </div>
+
+    <!--Middle Area-->
+    <div class="border-right border-left border-bottom rounded p-3 shadow-lg">
+      <p class = "text-white"><strong>This website is a collection of programs and games I've made during my time here at bishops.</strong></p>
+      <p class = "text-white">As of now, this website is almost completely empty. I'm working on a few fun projects to get running on  this site soon, but they're going to take a while. Anyways, here's a bunch of filler text. <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <hr class"text-white"></hr>
+      <h2 class = "text-white"><strong>3D Pixelart Tool</strong> <span class="badge badge-secondary badge-success">New!</span></h2>
+      <!--Anchor link that sends you to the Download table. (ID: DownloadJump)-->
+      <a class = "anchorButton" href="#DownloadJump"><strong>Go To Download</strong></a>
+      <!--Screenshots-->
+      <!--I didn't have that many screenshots, so I had to copy/paste the same one over and over. Sorry.-->
+      <div class = "border rounded shadow-lg p-3 float-right">
+        <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool." class = "rounded">
+        <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool." class = "rounded" >
+        <img src="images/program1sc1.gif" alt = "A gif screenshot of the 3D art tool." class = "rounded">
+      </div>
+      <p class = "text-white"><strong>Have you ever wanted to see what your pixelart will look like in 3D?</strong><br>This tool allows you to import any image/sprite into the program, and edit it in 3D space! You can use a variety of shapes to project your sprites on too, as well as light functionality,</p>
+      <!--IFrame Tool Guide-->
+      <div>
+          <h3 class = "text-white">GUIDE</h3>
+        <iframe src = "https://docs.google.com/document/d/1aUeEUoP9aAACAn4zzNFiRK97Jb5CEdY7H_L2BtcIp4A/edit" class ="w-100"></iframe>
+      </div>
+
+      <!--Download Table-->
+      <table class="table table-hover table-dark table-bordered rounded shadow-lg">
+      <thead>
         <tr>
-          <!--Operating System-->
-          <th>OS</th>
-          <th>Mac</th>
-          <th>Windows</th>
-          <th>Mobile</th>
+          <th class = "text-white text-center">OS</th>
+          <th class = "text-white text-center">Mac</th>
+          <th class = "text-white text-center">Windows</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class = "text-white text-center">Availiability</td>
+          <td class = "text-white text-center">No</td>
+          <td class = "text-white text-center">&#10004;</td>
         </tr>
         <tr>
-          <!--Availiability-->
-          <th>Availiability</th>
-          <th class = "invalid">Not Availiable</th>
-          <th class = "valid">&#10004;</th>
-          <th class = "invalid">Not Availiable</th>
+          <td class = "text-white text-center">Download</td>
+          <td class = "text-white text-center">N/A</td>
+          <td><a class = "btn btn-success btn-block" href = "https://drive.google.com/drive/folders/1NlxFJkr1kqSRyOvKQQGik6Y23XmjDv0p?usp=sharing"><strong>&#8659; Download<strong></a></td>
         </tr>
-        <tr>
-          <!--Downloads-->
-          <th>Download Link</th>
-          <th>N/A</th>
-          <th>
-            <a class = "linkButton" href = "https://drive.google.com/drive/folders/1NlxFJkr1kqSRyOvKQQGik6Y23XmjDv0p?usp=sharing"><strong>&#8659; Download<strong></a>
-          </th>
-          <th>N/A</th>
-        </tr>
-      </table>
+      </tbody>
+    </table>
     </div>
   </div>
 
