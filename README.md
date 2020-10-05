@@ -1,22 +1,18 @@
 # Khazeni Website (HTML-Basics)
 I'm learning the basics of **html** and **git** while developing my own website.
 
-Git Signature : *134c507*
+Git Signature : *c*
 
 *I plan to use this site in the future if it ends up looking good!*
 
 For the second part of our project, I plan to work on nice responsive elements around the website. (Such as elements that react when you hover/click/etc. on them)
 
-## Goals
-On my website, I plan to include:
-|Goal                |ASCII                          |
-|----------------|-------------------------------|
-|Downloads|Finished|
-|Online Game(s)|Not Finished|
-|Embedded Youtube|Not Finished|
-|Responsive Elements|Finished|
-|IFrame Stuff|Finished|
-|Table|Finished|
-|Lists|Finished|
-|Links|Finished|
-|Images|Finished|
+## Bootstrap Additions
+
+For bootstrap, I added 5 features I thought were cool.
+1. Notification bar
+2. New Table
+3. Custom Background Color
+4. Jumbotron/Title
+5. Navbar Icon
+6. Tooltip (Didn't really work)
