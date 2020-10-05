@@ -22,54 +22,78 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style type = "text/css">
+    body {
+      background: rgba(22,25,40,1.00) !important;W} /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+  </style>
+
 </head>
-<style type = "text/css">
-  body { background: rgba(22,25,40,1.00) !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-</style>
 <body>
   <!-- -->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark p-2">
+  <a class="navbar-brand" href="#">
+    <img src="images/icon.png" alt="Logo" style="width:40px;">
+  </a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#"><strong>Khaz</strong></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown"><strong>Dropdown link</strong></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Home</a>
+        <a class="dropdown-item" href="#">Intro</a>
+        <a class="dropdown-item" href="#">3D Pixelart Tool</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
   <div class = "container rounded bg-black">
 
     <!-- Alert Button-->
-    <div class="alert alert-success alert-dismissible fade show">
+    <div class="alert alert-success alert-dismissible fade show m-3">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <strong>A new game has been added!</strong> Check it out now.
     </div>
 
     <!-- Title -->
-    <div class="jumbotron text-center bg-dark shadow-lg">
+    <div class="jumbotron text-center bg-dark shadow-lg m-3">
       <h1 class = "display-1 text-white" title="Yup. Thats me.">KHAZ</h1>
       <p class = "text-white">Blah Blah blah</p>
     </div>
 
     <!--Left Menu-->
-    <div class = "border rounded p-3 shadow-lg">
-      <p class = "text-white"><strong>Current Projects:</strong></p>
-      <hr></hr>
-      <ul>
-        <li class = "text-white">Overworld</li>
-        <li class = "text-white">Another Item</li>
-        <li class = "text-white">Yet another Item</li>
-      </ul>
-    </div>
-    <!--Right Menu-->
-    <div class="border rounded p-3 shadow-lg">
-      <p class = "text-white"><strong>Finished Projects:</strong></p>
-      <hr></hr>
-      <ol>
-        <li class = "text-white">WackJack</li>
-        <li class = "text-white">3D Pixelart Tool</li>
-      </ol>
-      <hr></hr>
-      <p class = "text-white">New releases coming out soon! Come back to this site soon!</p>
-    </div>
+    <div class = "row">
+      <div class = "border rounded p-3 shadow-lg col-md-6">
+        <p class = "text-white"><strong>Current Projects:</strong></p>
+        <hr style = "border-top: 0.1em solid white"></hr>
+        <ul>
+          <li class = "text-white">Overworld</li>
+          <li class = "text-white">Another Item</li>
+          <li class = "text-white">Yet another Item</li>
+        </ul>
+      </div>
+      <!--Right Menu-->
+      <div class="border rounded p-3 shadow-lg col-md-6">
+        <p class = "text-white"><strong>Finished Projects:</strong></p>
+        <hr style = "border-top: 0.1em solid white"></hr>
+        <ol>
+          <li class = "text-white">WackJack</li>
+          <li class = "text-white">3D Pixelart Tool</li>
+        </ol>
+        <hr style = "border-top: 0.1em solid white"></hr>
+        <p class = "text-white">New releases coming out soon! Come back to this site soon!</p>
+      </div>
+      </div>
 
     <!--Middle Area-->
     <div class="border-right border-left border-bottom rounded p-3 shadow-lg">
       <p class = "text-white"><strong>This website is a collection of programs and games I've made during my time here at bishops.</strong></p>
       <p class = "text-white">As of now, this website is almost completely empty. I'm working on a few fun projects to get running on  this site soon, but they're going to take a while. Anyways, here's a bunch of filler text. <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <hr class"text-white"></hr>
+      <hr style = "border-top: 0.1em solid white"></hr>
       <h2 class = "text-white"><strong>3D Pixelart Tool</strong> <span class="badge badge-secondary badge-success">New!</span></h2>
       <!--Anchor link that sends you to the Download table. (ID: DownloadJump)-->
       <a class = "anchorButton" href="#DownloadJump"><strong>Go To Download</strong></a>
@@ -84,11 +108,11 @@
       <!--IFrame Tool Guide-->
       <div>
           <h3 class = "text-white">GUIDE</h3>
-        <iframe src = "https://docs.google.com/document/d/1aUeEUoP9aAACAn4zzNFiRK97Jb5CEdY7H_L2BtcIp4A/edit" class ="w-100"></iframe>
+        <iframe src = "https://docs.google.com/document/d/1aUeEUoP9aAACAn4zzNFiRK97Jb5CEdY7H_L2BtcIp4A/edit" class ="w-100 m-3"></iframe>
       </div>
 
       <!--Download Table-->
-      <table class="table table-hover table-dark table-bordered rounded shadow-lg">
+      <table class="table table-hover table-dark table-bordered rounded shadow-lg m-3">
       <thead>
         <tr>
           <th class = "text-white text-center">OS</th>
@@ -105,7 +129,7 @@
         <tr>
           <td class = "text-white text-center">Download</td>
           <td class = "text-white text-center">N/A</td>
-          <td><a class = "btn btn-success btn-block" href = "https://drive.google.com/drive/folders/1NlxFJkr1kqSRyOvKQQGik6Y23XmjDv0p?usp=sharing"><strong>&#8659; Download<strong></a></td>
+          <td><a class = "btn btn-success btn-block" href = "https://drive.google.com/drive/folders/1NlxFJkr1kqSRyOvKQQGik6Y23XmjDv0p?usp=sharing" data-toggle="tooltip" title="Go to download Page."><strong>&#8659; Download<strong></a></td>
         </tr>
       </tbody>
     </table>
