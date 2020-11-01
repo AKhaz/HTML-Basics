@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+  <title>Khaz</title>
+  <!--<link rel="stylesheet" href="style_css.css">-->
+  <meta name="description" content="A collection of games and programs.">
+  <meta name="keywords" content="games, free, online, multiplayer, programs, coding, khazeni, aiden">
+  <meta name="author" content="Aiden Khazeni">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Boostrap Stuff -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style_css.css">
+
+  <style type = "text/css">
+  </style>
+
+  <!-- Unity Stuff -->
+  <script src="UnityTestTemplateData/UnityProgress.js"></script>
+  <script src="UnityTest/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "UnityTest/Export.json", {onProgress: UnityProgress});
+  </script>
+
+</head>
+<body>
+  <!-- -->
+
+  <!--Title Bar-->
+  <div class="titleDiv">
+    <h1 id = "mainTitle" title="Yup. Thats me.">KHAZ</h1>
+    <p id = "titleSubtitle">A collection of things I've made at Bishops.</p>
+  </div>
+
+    <!--Navbar-->
+    <ul class = "navList">
+      <li class = "navListItem"><a href = "htmlProject.html">Home</a></li>
+      <li class = "navListItem"><a href = "mailto:aiden.khazeni.22@bishops.com">Send a Suggestion</a></li>
+    </ul>
+
+    <!--For placing the game in-browser (doesnt work on file://)-->
+    <!-- <div class = "gameHolder">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <h1 class = "gameTitle">Unity Test</h1>
+    </div> -->
+
+    <div class="descriptionHolder">
+      <h1>3D Pixelart Tool</h1>
+      <p class="paraStyle1">The game/program would be playable here, but since Unity's player wont run on file:// sites, it doesn't work.</p>
+      <a  class="anchorButton" href="#DownloadJump">Jump to Download</a>
+      <hr></hr>
+      <p class="paraStyle1">An interactive tool designed to visualize your 2d art in 3d environments. Make a scene that updates with your art in real time! You can visit the guide using the link below to learn more about how to use the tool, and other stuff.</p>
+      <img src="images/3dpixelarttoolcard.gif" alt="A gif screenshot of the 3D art tool.">
+      <p class="paraStyle1">Have you ever wanted to see what your pixelart will look like in 3D?<br>This tool allows you to import any image/sprite into the program, and edit it in 3D space! You can use a variety of shapes to project your sprites on too, as well as light functionality.</p>
+      <a class="linkButton" href="https://docs.google.com/document/d/1aUeEUoP9aAACAn4zzNFiRK97Jb5CEdY7H_L2BtcIp4A/edit">Go to Guide</a>
+      <hr></hr>
+      <h1 id="DownloadJump">DOWNLOAD</h3>
+      <table class = "downloadTable">
+        <tr>
+          <!--Operating System-->
+          <th>OS</th>
+          <th>Mac</th>
+          <th>Windows</th>
+          <th>Mobile</th>
+        </tr>
+        <tr>
+          <!--Availiability-->
+          <th>Availiability</th>
+          <th class = "invalid">Not Availiable</th>
+          <th class = "valid">&#10004;</th>
+          <th class = "invalid">Not Availiable</th>
+        </tr>
+        <tr>
+          <!--Downloads-->
+          <th>Download Link</th>
+          <th>N/A</th>
+          <th>
+            <a class = "linkButton" href = "https://drive.google.com/drive/folders/1NlxFJkr1kqSRyOvKQQGik6Y23XmjDv0p?usp=sharing"><strong>&#8659; Download<strong></a>
+          </th>
+          <th>N/A</th>
+        </tr>
+      </table>
+    </div>
+
+</body>
+</html>

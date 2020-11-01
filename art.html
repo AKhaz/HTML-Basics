@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+  <title>Khaz</title>
+  <!--<link rel="stylesheet" href="style_css.css">-->
+  <meta name="description" content="A collection of games and programs.">
+  <meta name="keywords" content="games, free, online, multiplayer, programs, coding, khazeni, aiden">
+  <meta name="author" content="Aiden Khazeni">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Boostrap Stuff -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style_css.css">
+
+  <style type = "text/css">
+  </style>
+
+  <!-- Unity Stuff -->
+  <script src="UnityTestTemplateData/UnityProgress.js"></script>
+  <script src="UnityTest/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "UnityTest/Export.json", {onProgress: UnityProgress});
+  </script>
+
+</head>
+<body>
+  <!-- -->
+
+  <!--Title Bar-->
+  <div class="titleDiv">
+    <h1 id = "mainTitle" title="Yup. Thats me.">KHAZ</h1>
+    <p id = "titleSubtitle">A collection of things I've made at Bishops.</p>
+  </div>
+
+    <!--Navbar-->
+    <ul class = "navList">
+      <li class = "navListItem"><a href = "htmlProject.html">Home</a></li>
+      <li class = "navListItem"><a href = "mailto:aiden.khazeni.22@bishops.com">Send a Suggestion</a></li>
+    </ul>
+
+    <!--For placing the game in-browser (doesnt work on file://)-->
+    <!-- <div class = "gameHolder">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <h1 class = "gameTitle">Unity Test</h1>
+    </div> -->
+
+    <div class="descriptionHolder">
+      <h1>Art</h1>
+      <p class="paraStyle1">Some of the art I've made at Bishops. (I only included one, as an example.)</p>
+      <hr></hr>
+      <p class="paraStyle1">An interactive tool designed to visualize your 2d art in 3d environments. Make a scene that updates with your art in real time! You can visit the guide using the link below to learn more about how to use the tool, and other stuff.</p>
+      <img class="artImage" src="images/artcard.png" alt="A gif screenshot of the 3D art tool.">
+      <hr></hr>
+    </div>
+
+</body>
+</html>

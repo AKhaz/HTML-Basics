@@ -55,7 +55,11 @@ h3 {
   font-size: 30px;
   text-align: left;
 }
-
+/**Download Table**/
+.downloadTable{
+  overflow: hidden;
+  text-align: center;
+}
 /*General table styling*/
 table, th, td{
   color: white;
@@ -64,8 +68,6 @@ table, th, td{
   padding: 20px;
   border-collapse: collapse;
   background-color: #181425;
-  margin-left: auto;
-  margin-right: auto;
 }
 /*Defining style classes for green and red text on tables*/
 th.valid{
@@ -108,13 +110,17 @@ th.invalid{
 .anchorButton:hover{
   background-color: #63c74d;
   box-shadow: 0px 0px 8px #3e8948;
+  text-decoration: none;
+  color: white;
 }
 .anchorButton:active{
   box-shadow: 0px 0px 16px #3e8948;
+  text-decoration: none;
+  color: white;
 }
 /*Link Button CSS*/
-.linkButton:link, .linkButton:visited {
-  background-color: #3e8948;
+.linkButton{
+  background-color: #0092cc;
   color: white;
   font-family: basicFont;
   padding: 10px 10px;
@@ -125,11 +131,15 @@ th.invalid{
   overflow: hidden;
 }
 .linkButton:hover{
-  background-color: #63c74d;
-  box-shadow: 0px 0px 8px #3e8948;
+  background-color: #22c7ff;
+  box-shadow: 0px 0px 8px #22c7ff;
+  text-decoration: none;
+  color: white;
 }
 .linkButton:active{
-  box-shadow: 0px 0px 16px #3e8948;
+  box-shadow: 0px 0px 16px #22c7ff;
+  text-decoration: none;
+  color: white;
 }
 /*Used for descriptive paragraphs on title page*/
 .paraStyle1{
@@ -138,12 +148,7 @@ th.invalid{
   text-align: justify;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-/**Download Table**/
-.downloadTable{
-  float: left;
-  overflow: hidden;
-  text-align: center;
+  font-size: 18px;
 }
 /**Middle Area*/
 .main{
@@ -234,6 +239,48 @@ th.invalid{
   text-decoration: none;
   color: white;
   text-shadow: 0px 0px 12px black;
+}
+.gameHolder{
+  width: 100%;
+  height: 800px;
+  margin: 32px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: black;
+}
+.gameTitle{
+  text-align: center;
+  padding: 16px;
+  vertical-align: bottom;
+}
+.descriptionHolder{
+  width: 100%;
+  height: auto;
+  margin: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: black;
+  padding: 32px;
+  padding-left: 20px;
+  padding-right: 1000px;
+}
+.descriptionHolder p{
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.descriptionHolder h1{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+hr {
+  border: 1px solid white;
+  margin: 32px;
+  margin-left: 0px;
+}
+.artImage{
+  border-radius: 16px;
+  width: 100%;
 }
 /*This extra stuff checks the window width, and "scales" the columns to make sure there is no glitching/weird scrolling with smaller screen sizes*/
   @media only screen and (max-width: 1900px) {
